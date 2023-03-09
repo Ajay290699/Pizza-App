@@ -1,0 +1,21 @@
+/* .inline{
+    display: inline;
+} */
+h1{
+    margin-left: 520px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: darkblue;
+    font-weight: 500;
+    font-size: 40px;
+}
+img{
+    height: 260px;
+    width: 450px;
+    padding-left: 30px;
+}
+h2{
+    padding-left: 100px;
+    background-color: rgb(90, 84, 84);
+    color: orange;
+}

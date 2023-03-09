@@ -1,0 +1,15 @@
+<div>
+    <h1>Cart</h1>
+    <span>
+        <span *ngFor="let pizza of pizzaService.cartPizzas" >
+            <div class="card">
+                <h4>Pizza Id :{{pizza.pizzaId}}</h4>
+                <h4>Pizza Name : {{pizza.pizzaName}}</h4>
+                <h4>Price : ${{pizza.pizzaPrice}}</h4>
+            </div>
+        </span>
+        <h2>Total Amount: ${{totalAmount}}</h2>
+        <button (click)="orderConfirm()"> Confirm Order</button>
+    </span>
+    <app-order *ngIf="isOrderPlaced"></app-order> 
+</div>

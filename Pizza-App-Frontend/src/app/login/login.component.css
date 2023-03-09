@@ -1,0 +1,17 @@
+.card{
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+    box-shadow: 5px 5px 4px 4px grey;
+    height: 400px;
+}
+.head{
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+.full-width{
+    width: 100%;
+}
+button{
+    margin: auto;
+}

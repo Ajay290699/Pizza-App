@@ -1,0 +1,18 @@
+
+    <div>
+        <h1>Menu</h1>
+        <span>
+            <span *ngFor="let pizza of pizza" >
+                <div class="card">
+                    <img class="image" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg"
+                        alt="pizza image"><br>
+                    <span>{{pizza.pizzaId}}</span><br>
+                    <span>{{pizza.pizzaName}}</span><br>
+                    <span>${{pizza.pizzaPrice}}</span><br>
+                    <button (click)="addToCart(pizza)">Add to Cart</button>
+                </div>
+            </span>
+        </span>
+        <button id="btn" (click)="goToCart()">View Cart</button>
+        <router-outlet></router-outlet>
+    </div>
