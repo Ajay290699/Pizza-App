@@ -23,7 +23,6 @@ export class CartComponent {
   }
 
   orderConfirm() {
-    // alert("order confirm method called");
     this.userService.userDetails!.pizza = this.pizzaService.cartPizzas;
     this.pizzaService.registerUser(this.userService.userDetails).subscribe(
       response=>{
