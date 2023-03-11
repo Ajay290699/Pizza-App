@@ -60,7 +60,7 @@ public class UserController {
     public ResponseEntity<?> loginCheck(@RequestBody User user) {
         User result = userService.loginCheck(user.getEmail(), user.getPassword());
         if(result!=null) {
-            //valid user.....
+            //valid user
             //generate token
             Map<String, String> map = securityTokenGenerator.tokenGenrator(result);
             return new ResponseEntity<>(map, HttpStatus.OK);
