@@ -66,7 +66,7 @@ public class UserController {
             return new ResponseEntity<>(map, HttpStatus.OK);
         }
         else {
-            //invalid user or user does not exist .....
+            //invalid user or user does not exist 
             return new ResponseEntity<>("invalid user or user does not exist", HttpStatus.NOT_FOUND);
         }
     }
